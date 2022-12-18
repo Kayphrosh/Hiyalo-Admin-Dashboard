@@ -1,0 +1,117 @@
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 20%;
+    min-height: 100%;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid rgba(117, 117, 117, 0.3);
+    /* border-top: 1px solid rgba(117, 117, 117, 0.3); */
+    /* margin-top: 80px; */
+}
+
+.dashboard-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    padding-left: 20%;
+    /* align-items: center; */
+    width: 100%;
+    height: 100px;
+
+}
+.dashboard-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+    /* width: 56px;
+    margin-left: 20%;
+} */
+.dashboard-navbar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+}
+.dashboard-nav-links{
+    display: flex;
+    flex-direction: column;
+
+}
+.dashboard-nav-links li {
+    display: flex;
+    align-items: center;
+    margin-top:  1rem;
+
+}
+.side-bar-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding-left: 20%;
+    white-space: nowrap;
+    color: #4733AC;
+}
+.side-bar-link span {
+    font-family: 'gilroy-medium';
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    margin-left: 10%;
+}
+
+.side-bar-link img {
+    width: 32px;
+}
+.dashboard-nav-links #active {
+    background: #ECECEC;
+    /* border: 1px solid #4733AC; */
+    /* border-left: 6px solid #4733AC; */
+}
+.dashboard-nav-links li  a:hover {
+    background: #ECECEC;
+    border-left: 6px solid #4733AC;
+    transition: all 0.1s ease-in;
+}
+.badger {
+    position: relative;
+}
+.badge:after{
+    content:"";
+    position: absolute;
+    background: rgb(255, 5, 0);
+    height:1rem;
+    top:1rem;
+    right:1.5rem;
+    width:1rem;
+    text-align: center;
+    line-height: 1rem;;
+    font-size: 1rem;
+    border-radius: 50%;
+    color:white;
+    border:1px solid rgb(255, 5, 0);
+}
+
+@media (max-width: 1168px) {
+    .side-bar { 
+        flex-basis: 10%;
+        width: 10%;
+    }
+    .side-bar-link span {
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 886px) {
+    .side-bar {
+        display: none !important;
+    }
+}

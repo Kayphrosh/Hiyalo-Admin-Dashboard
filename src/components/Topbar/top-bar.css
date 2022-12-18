@@ -1,0 +1,130 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0rem 3rem;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    background: #FFF;
+}
+.dashboard-hamburger {
+    display: none;
+    overflow: hidden;
+}
+.welcome-back {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+.welcome-back h3 {
+    font-family: 'gilroy-medium';
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: #050213;
+}
+.welcome-back p {
+    color: #333;
+    font-size: 16px;
+}
+.top-bar-cta {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.profile-settings {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.profile-settings .iconify-dropdown {
+    font-size: 28px;
+}
+.profile-settings img{
+    object-fit: cover;
+    object-position: center center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.top-bar-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.top-bar-cta span {
+    display: flex;
+    justify-content: center;
+    /* padding: .5rem; */
+}
+.top-bar-cta span button {
+    height: 45px;
+    width: 45px;
+    padding: .5rem;
+    background: rgba(26, 116, 232, 0.05);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.top-bar-cta span button img {
+    width: 20px;
+}
+
+.dashboard-nav-content {
+    transform: translateX(-100%);
+    display: none;
+}
+/* .dashboard-nav-content .dashboard-nav-links {
+
+} */
+@media  screen and (max-width: 1168px) {
+    .top-bar {
+        height: auto;
+        padding: 0 1.5rem !important;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .top-bar {
+        padding: 1rem 1rem !important;
+    }
+    .welcome-back {
+        display: none;
+    }
+    .welcome-back h3 {
+        font-size: 20px;
+    }
+    .profile-settings img{
+        width: 48px;
+        height: 48px;
+    }
+    .dashboard-hamburger {
+        display: flex;
+        flex-direction: column;
+        row-gap: .4rem;
+    }
+    .dashboard-hamburger div {
+        width: 32px;
+        height: 3px;
+        background: #050213;
+    }
+    .dashboard-nav-content.dashboard-nav-shows {
+        transform: translateX(0%);
+        transition: all 0.5s ease;
+        position: absolute;
+        display: flex;
+        background: #ECECEC;
+        width: 80%;
+        height: 100%;
+    }
+    .dashboard-nav-shows .dashboard-nav-links {
+        width: 80%;
+        height: 100%;
+    }
+    .dashboard-nav-shows .side-bar-link span {
+        display: flex !important;
+    }
+}
