@@ -1,5 +1,26 @@
 
 
+.add-new-property-container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    padding: 0 3rem;
+    margin-top: 2rem;
+}
+.add-new-property-container header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.add-new-property-container header h4 {
+    font-family: 'gilroy-medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #333333;
+}
 
 .settings-filter {
     margin-top: 1.5rem;

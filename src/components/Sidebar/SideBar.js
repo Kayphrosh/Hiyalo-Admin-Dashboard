@@ -28,9 +28,9 @@ const SideBar = () => {
           </li>
           <li>
             <NavLink
-              to="/listed-properties"
+              to="/users"
               className="side-bar-link"
-              id={window.location.pathname === '/payments' ? 'active' : ''}
+              id={window.location.pathname === '/users' ? 'active' : ''}
             >
               <img src={usersIcon} alt="" />
               <span>Users</span>
@@ -40,7 +40,7 @@ const SideBar = () => {
             <NavLink
               to="/listed-properties"
               className="side-bar-link"
-              id={window.location.pathname === '/payments' ? 'active' : ''}
+              id={window.location.pathname === '/listed-properties' ? 'active' : ''}
             >
               <img src={buildingsIcon} alt="" />
               <span>Apartments</span>
@@ -48,7 +48,7 @@ const SideBar = () => {
           </li>
           <li>
             <NavLink
-              to="/admin-transaction"
+              to="/transactions"
               className="side-bar-link"
               id={window.location.pathname === '/payments' ? 'active' : ''}
             >
@@ -58,7 +58,7 @@ const SideBar = () => {
           </li>
           <li>
             <NavLink
-              to="/admin-settings"
+              to="/settings"
               className="side-bar-link"
               id={window.location.pathname === '/apartments' ? 'active' : ''}
             >

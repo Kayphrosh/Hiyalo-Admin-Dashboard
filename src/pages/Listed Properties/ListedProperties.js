@@ -65,8 +65,9 @@ const ListedApartment = () => {
                   <th>PaymentID</th>
                   <th>Photos</th>
                   <th>Name</th>
-                  <th>Status</th>
                   <th>Amount</th>
+                  <th>Status</th>
+
                   <th>Date</th>
                   <th>Action</th>
                 </tr>

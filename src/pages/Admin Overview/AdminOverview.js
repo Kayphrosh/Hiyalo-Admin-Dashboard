@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './admin-overview.css'
+import { Icon } from '@iconify/react';
+import './admin-overview.css';
 import SideBar from '../../components/Sidebar/SideBar';
 import TopBar from '../../components/Topbar/TopBar';
 import walletIcon from '../../images/walletIcon.svg';
@@ -8,10 +9,7 @@ import housesIcon from '../../images/housesIcon.svg';
 import tenantUsersIcon from '../../images/tenantUsersIcon.svg';
 import agentusersIcon from '../../images/agentUsersIcon.svg';
 
-
-
 const AdminOverview = () => {
-
   const totalIcome = '1,000,000';
 
   const totalListedApartment = '1,011';
@@ -72,10 +70,7 @@ const AdminOverview = () => {
               <span>
                 <img src={walletIcon} alt="" />
               </span>
-              <iconify-icon
-                class="iconify"
-                icon="material-symbols:more-vert"
-              ></iconify-icon>
+              <Icon icon="material-symbols:more-vert" />
             </header>
 
             <p>Total Income Balance</p>
@@ -89,10 +84,7 @@ const AdminOverview = () => {
                 <img src={housesIcon} alt="" />
               </span>
 
-              <iconify-icon
-                class="iconify"
-                icon="material-symbols:more-vert"
-              ></iconify-icon>
+              <Icon icon="material-symbols:more-vert" />
             </header>
 
             <p>Total Listed Apartment</p>
@@ -106,10 +98,7 @@ const AdminOverview = () => {
                 <img src={tenantUsersIcon} alt="" />
               </span>
 
-              <iconify-icon
-                class="iconify"
-                icon="material-symbols:more-vert"
-              ></iconify-icon>
+              <Icon icon="material-symbols:more-vert" />
             </header>
 
             <p>Total Tenantt</p>
@@ -123,10 +112,7 @@ const AdminOverview = () => {
                 <img src={agentusersIcon} alt="" />
               </span>
 
-              <iconify-icon
-                class="iconify"
-                icon="material-symbols:more-vert"
-              ></iconify-icon>
+              <Icon icon="material-symbols:more-vert" />
             </header>
 
             <p>Total Agent</p>

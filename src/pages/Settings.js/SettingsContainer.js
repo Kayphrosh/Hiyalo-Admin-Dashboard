@@ -15,14 +15,14 @@ const SettingsContainer = () => {
   };
 
   return (
-    <section className="dashbboard-container">
+    <section className="dashboard-container">
       <SideBar />
 
       <main className="dashboard-main">
         <TopBar />
 
         <main class="add-new-property-container">
-          <header>
+          <header className='property-page-title transaction-title'>
             <h4>Account Settings:</h4>
             {/* <div class="add-property-cta">
               <button type="submit">Cancel</button>
